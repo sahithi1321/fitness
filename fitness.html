@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="fitness.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+    </header>
+    <main>
+        <section id="log-workout">
+            <h2>Log Workout</h2>
+            <form id="workout-form">
+                <label for="workout-date">Date:</label>
+                <input type="date" id="workout-date" required>
+                
+                <label for="workout-type">Workout Type:</label>
+                <input type="text" id="workout-type" required>
+                
+                <label for="workout-duration">Duration (minutes):</label>
+                <input type="number" id="workout-duration" required>
+                
+                <button type="submit">Log Workout</button>
+            </form>
+        </section>
+        
+        <section id="set-goals">
+            <h2>Set Fitness Goals</h2>
+            <form id="goals-form">
+                <label for="goal-type">Goal Type:</label>
+                <input type="text" id="goal-type" required>
+                
+                <label for="goal-target">Target (e.g., run 5 km):</label>
+                <input type="text" id="goal-target" required>
+                
+                <button type="submit">Set goal</button>
+                </form>
+               </div>
+            </section>
+            <section class="progress">
+                <div class="list-container">
+                    <h2>Workouts</h2>
+                    <ul id="workout-list"></ul>
+                </div>
+                <div class="list-container">
+                    <h2>Goals</h2>
+                   <ul id="goal-list"></ul>
+                </div>
+            </section>
+            </main>
+        </div>
+        <script src="fitness.js"></script>
+        </body>
+        </html>
